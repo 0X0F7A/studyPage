@@ -1,6 +1,9 @@
-> 这个也发在了b站上 <https://www.bilibili.com/read/cv23441835>
 
-在看[http://matematicas.uam.es/~mavi.melian/CURSO_15_16/web_Discreta/recurrence.pdf]的证明的时候，发现作者在Proof of Theorem 2中并未给出
+!!! note "info"
+
+    这个也发在了b站上 <https://www.bilibili.com/read/cv23441835>
+
+在看<http://matematicas.uam.es/~mavi.melian/CURSO_15_16/web_Discreta/recurrence.pdf>的证明的时候，发现作者在Proof of Theorem 2中并未给出
 $$\sum_{k=0}^{d+1} \binom{d+1}{k}(-1)^kq(n-k)=0$$
 的证明（其中d为多项式$q(x)$的阶数，n为任意数）
 
