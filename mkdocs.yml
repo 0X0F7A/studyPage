@@ -3,21 +3,14 @@ site_name: CatPig's study archive
 nav:
   - 主页:
     - Welcome: index.md
-    - Getting Started: start.md
     - About: about.md
-  - Math: natural_science.md
-  - 电子: computer_science.md
-  - 网安: optional_course.md
-  - NULL: course_A.md
-  - NULL: course_B.md
-  - NULL: course_C.md
-  - NULL: course_D.md
-  - NULL: course_E.md
-  - NULL: acee.md
+  - 自然科学: natural_science.md
+  - 网安: computer_science.md
+  - 电子: double_e.md
+  - 脚本: scripts.md
 
 theme:
   name: material
-  logo: 'images/logo.svg'
   custom_dir: overrides
   features:
     - navigation.tabs

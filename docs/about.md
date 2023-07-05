@@ -1,8 +1,4 @@
----
-comments: true
----
 
-
-> Developed by ALL ACEERs
+> Developed by @Sqrtyz
 
 > 2023/7/2

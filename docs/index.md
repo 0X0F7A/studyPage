@@ -1,12 +1,8 @@
-# Welcome to ACEE Archive
+# Welcome my study archive
 
-本网页用于在 ACEERs 间进行学习资源的分享，我们欢迎每一位心怀梦想的青年为这个资源库增添思维的火花。
 
-> 请注意，目前本站只对 ACEERs 开放。由于 ACEEA 没有设计访问限制，**请不要向其它人外传本网址。**
 
-有关如何使用本网站，参见 [Getting Started](./start.md)。
-
-## 自定义你的 ACEEA
+## 自定义
 
 单击搜素框旁的按钮切换亮色或暗色。
 
