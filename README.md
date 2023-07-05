@@ -1,3 +1,4 @@
-# ACEEArchive
+# My study pages
+I use this repo to store some of my notes
 
-[Private Repo](https://github.com/ACEE-s/private-repository-of-ACEE)
+The architecture is cloned from a repo by @Sqrtyz
