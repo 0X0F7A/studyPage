@@ -1,7 +1,5 @@
 # Welcome my study archive
 
-test
-
 ## 自定义
 
 单击搜素框旁的按钮切换亮色或暗色。
@@ -32,11 +30,12 @@ test
 </div>
 
 <script>
-  var buttons = document.querySelectorAll("button[data-md-color-primary]");
-  Array.prototype.forEach.call(buttons, function(button) {
-    button.addEventListener("click", function() {
-      document.body.dataset.mdColorPrimary = this.dataset.mdColorPrimary;
-      localStorage.setItem("data-md-color-primary",this.dataset.mdColorPrimary);
+    var buttons = document.querySelectorAll("button[data-md-color-primary]");
+    Array.prototype.forEach.call(buttons, function(button) {
+        button.addEventListener("click", function() {
+            document.body.dataset.mdColorPrimary = this.dataset.mdColorPrimary;
+            localStorage.setItem("data-md-color-primary", this.dataset.mdColorPrimary);
+            localStorage.setItem("data-md-color-accent", this.dataset.mdColorPrimary);
+        })
     })
-  })
 </script>

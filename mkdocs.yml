@@ -4,9 +4,14 @@ nav:
   - 主页:
     - Welcome: index.md
     - About: about.md
-  - 自然科学: natural_science.md
-  - 网安: computer_science.md
-  - 电子: double_e.md
+  - 自然科学:
+    - subpages: natural_science.md
+    - 相对论质量的推导: natural_science/ns_0.md
+    - 某常系数非齐次线性递归关系的证明中的一个引理证明: natural_science/ns_1.md
+  - 网安:
+    - subpages: computer_science.md
+  - 电子:
+    - subpages: double_e.md
   - 脚本: scripts.md
 
 theme:
@@ -20,7 +25,7 @@ theme:
     repo: fontawesome/brands/git-alt 
     edit: material/pencil 
     view: material/eye
-  palette: 
+  palette:
     # Palette toggle for light mode
     - scheme: default
       toggle:
@@ -36,9 +41,13 @@ theme:
 
 extra_css:
   - stylesheets/extra.css
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css
 
 extra_javascript:
   - javascripts/extra.js
+  - javascripts/katex.js
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js
 
 repo_url: https://github.com/0X0F7A/studyPage/
 repo_name: 0X0F7A/studyPage/
@@ -48,3 +57,5 @@ markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
+
+
