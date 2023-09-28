@@ -46,3 +46,11 @@ code[data-md-color-primary] {
     font-size: .7rem;
     line-height: 1.6;
 }
+
+.md-typeset table:not([class]) {
+    border-radius: 5px;
+}
+
+thead {
+    color: var(--md-primary-fg-color);
+}
