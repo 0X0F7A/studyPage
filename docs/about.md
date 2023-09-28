@@ -1,4 +1,4 @@
 
-> Originally Developed by [@Sqrtyz](https://github.com/Sqrtyz)
+> Originally Adapted by [@Sqrtyz](https://github.com/Sqrtyz)
 
 > 2023/7/2

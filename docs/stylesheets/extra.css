@@ -54,3 +54,11 @@ code[data-md-color-primary] {
 thead {
     color: var(--md-primary-fg-color);
 }
+
+.md-typeset h1 {
+    color: var(--md-primary-fg-color);
+}
+
+.md-typeset h2 {
+    font-family: 黑体;
+}
