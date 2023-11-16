@@ -18,7 +18,7 @@
     .relative-container, .recommended-swipe-core, .bili-grid, .eva-banner, .vip-wrap, .ad-report:not(:empty), 
     .video-card-ad-small, .recommended-swipe, .primary-btn.go-back, .link-item.link-item__right, .other-link, 
     .footer-icons, .pop-live-small-mode, .red-num--dyn, .pop-live-small-mode, #bili-header-banner-img, 
-    .red-num--dynamic {
+    .red-num--dynamic, #reco_list, #slide_ad {
         display:none !important;
     }
     .bili-grid.short-margin.grid-anchor{
@@ -42,6 +42,13 @@
     a.entry-title, a.left-entry__title {
         visibility:visible;
     }
+    /* for fucking newer version*/
+    .floor-single-card, .bili-live-card, .desktop-download-tip {
+        display: none;
+    }
+    .recommended-container_floor-aside .container > :nth-of-type(n+8) {
+        margin-top: 0px !important;
+    }
 }
 
 @-moz-document domain("t.bilibili.com") {
@@ -49,7 +56,7 @@
         display: none !important;
     }
     .trending, .adaptive-scroll, .nav-user-center .t .num, .topic-panel, .bili-dyn-publishing, 
-    .bili-dyn-publishing .topic-panel, .bili-dyn-ads {
+    .bili-dyn-publishing .topic-panel, .bili-dyn-ads, .bili-dyn-version-control__reminding {
         display:none;
     }
     .nav-search-keyword::-moz-placeholder {
@@ -89,6 +96,39 @@
     },false);
 })();
 ```
+
+## 新版bilibili禁止无限下拉&清除广告及创意广告
+```javascript
+// ==UserScript==
+// @name         Block AD
+// @namespace    http://tampermonkey.net/
+// @version      0.1
+// @description  try to take over the world!
+// @author       You
+// @match        www.bilibili.com
+// @icon         https://www.google.com/s2/favicons?sz=64&domain=bilibili.com
+// @grant        none
+// ==/UserScript==
+
+(function() {
+    window.addEventListener('transitionend',function(){
+        var a = document.querySelectorAll(".bili-video-card__info--ad");
+        for(var i=0; i<a.length; i++) {a[i].parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.remove()};
+        a = document.querySelectorAll(".bili-video-card__info--creative-ad");
+        for(i=0; i<a.length; i++) {a[i].parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.remove()};
+        a = document.querySelector(".container.is-version8").childNodes;
+        for(i=0; i<a.length; i++) {
+            if(a[i].nodeType == 1) {
+                if(a[i].attributes.class.nodeValue == "feed-card");
+                else {
+                    a[i].remove();
+                }
+            }
+        }
+    },false);
+})();
+```
+
 ## 自定义的百度界面
 ```css
 /* ==UserStyle==
