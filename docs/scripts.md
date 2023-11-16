@@ -46,9 +46,15 @@
     .floor-single-card, .bili-live-card, .desktop-download-tip {
         display: none;
     }
-    .recommended-container_floor-aside .container > :nth-of-type(n+8) {
+    .recommended-container_floor-aside .container > :nth-of-type(n+8) {  /* this fix the gap of the large banner */
         margin-top: 0px !important;
     }
+    .feed-card .bili-video-card.is-rcmd {  /* this part fix the ever scrolling */
+        display: block;
+    }
+    .bili-video-card {
+        display:none;
+    } /* till here */
 }
 
 @-moz-document domain("t.bilibili.com") {
@@ -116,7 +122,7 @@
         for(var i=0; i<a.length; i++) {a[i].parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.remove()};
         a = document.querySelectorAll(".bili-video-card__info--creative-ad");
         for(i=0; i<a.length; i++) {a[i].parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.remove()};
-        a = document.querySelector(".container.is-version8").childNodes;
+        /* a = document.querySelector(".container.is-version8").childNodes;
         for(i=0; i<a.length; i++) {
             if(a[i].nodeType == 1) {
                 if(a[i].attributes.class.nodeValue == "feed-card");
@@ -124,7 +130,7 @@
                     a[i].remove();
                 }
             }
-        }
+        } */
     },false);
 })();
 ```
