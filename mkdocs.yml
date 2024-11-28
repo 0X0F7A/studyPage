@@ -15,7 +15,9 @@ nav:
     - subpages: computer_science.md
   - 电子:
     - subpages: double_e.md
-  - 脚本: scripts.md
+  - 杂项:
+    - 记录文件修改: misc/file_logging/index.md
+    - 脚本: scripts.md
 
 theme:
   name: material
