@@ -278,12 +278,12 @@
                 // modalOverlay.remove();
             }
 
-            if (popup && popupButton) {
+            if (popup && popupButton && handler_arg_b.style["display"] != "none") {
                 log("Popup detected, removing...");
 
                 handler_arg_b.close();
-                popup.remove();
-                video.play();
+                // popup.remove();
+                // video.play();
 
                 /*setTimeout(() => {
                     // video.play();
