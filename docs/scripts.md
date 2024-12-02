@@ -283,7 +283,7 @@
 
                 handler_arg_b.close();
                 // popup.remove();
-                // video.play();
+                video.play();
 
                 /*setTimeout(() => {
                     // video.play();
