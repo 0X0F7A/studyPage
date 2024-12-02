@@ -227,3 +227,87 @@
     }
 }
 ```
+
+## 反反adblocker弹窗脚本
+
+修改自 [https://github.com/TheRealJoelmatic/RemoveAdblockThing](https://github.com/TheRealJoelmatic/RemoveAdblockThing)
+
+```javascript
+// ==UserScript==
+// @name         Remove Adblock Thing(edited)
+// @namespace    http://tampermonkey.net/
+// @version      5.6
+// @description  Removes Adblock Thing
+// @author       JoelMatic
+// @match        https://www.youtube.com/*
+// @icon         https://www.google.com/s2/favicons?sz=64&domain=youtube.com
+// @downloadURL  https://github.com/TheRealJoelmatic/RemoveAdblockThing/raw/main/Youtube-Ad-blocker-Reminder-Remover.user.js
+// @grant        none
+// ==/UserScript==
+
+(function()
+ {
+    // Enable The Popup remover (pointless if you have the Undetected Adblocker)
+    const removePopup = true;
+    // Enable debug messages into the console
+    const debugMessages = true;
+
+    // Set everything up here
+    log("Script started");
+
+    if (removePopup) popupRemover();
+
+    // Remove Them pesski popups
+    function popupRemover() {
+
+        setInterval(() => {
+            // how to see what to change, watch the element handler_arg_b for change in attribute, then see the stack 
+            const modalOverlay = document.querySelector("tp-yt-iron-overlay-backdrop");
+            const popup = document.querySelector(".style-scope ytd-enforcement-message-view-model");
+            const handler_arg_b = popup.parentElement;
+            // handleClosePopupAction_
+            const popupButton = document.getElementById("dismiss-button");
+
+            var video = document.querySelector('video');
+
+            const bodyStyle = document.body.style;
+            bodyStyle.setProperty('overflow-y', 'auto', 'important');
+
+            if (modalOverlay) {
+                modalOverlay.removeAttribute("opened");
+                // modalOverlay.remove();
+            }
+
+            if (popup && popupButton) {
+                log("Popup detected, removing...");
+
+                handler_arg_b.close();
+                popup.remove();
+                video.play();
+
+                /*setTimeout(() => {
+                    // video.play();
+                }, 500);*/
+
+                log("Popup removed");
+            }
+            // Check if the video is paused after removing the popup
+            // if (!video.paused) return;
+            // UnPause The Video
+            // video.play();
+
+        }, 1000);
+    }
+
+})();
+
+```
+
+```css
+@-moz-document domain("www.youtube.com") {
+    /*, ytd-popup-container*/
+    .masthead-ad, ytd-ad-slot-renderer, ytd-reel-shelf-renderer, ytd-enforcement-message-view-model, tp-yt-iron-overlay-backdrop{
+        display: none;
+    }
+}
+```
