@@ -19,7 +19,7 @@
 * Concepts: Bandwidth & throughput, latency & response time
 * $E=\overline{P}\times t_{exe}$
 * $E_{dynamic}\propto Capacitive\ load\times V^2$
-* $P_{dynamic}\propto E_{dynamic}\times frequency$ 降频，降功不降能, $P_{static}=C\times V$
+* $P_{dynamic}\propto E_{dynamic}\times frequency$ 降频，降功不降能, $P_{static}=I\times V$
 * Impove Energy: (D)ynamic (V)otage-(F)requency (S)caling, design for typical case, overclock/turbo, ...
 * $Dies\ per\ wafer=\cfrac{\pi r^2}{Die\ area}-\cfrac{\pi d}{\sqrt{2\times Die\ area}}$
 * $Die\ yield=Wafer\ yield\times\cfrac{1}{(1+Defects\ per\ unit\ area\times S_{Die})^N}$
