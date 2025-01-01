@@ -11,6 +11,8 @@ nav:
     - 逻辑代数对偶性的证明: natural_science/ns_2.md
     - 一些磁共振原理的笔记: natural_science/ns_3.md
     - 乱七八糟发笔记: natural_science/ns_4.md
+  - 计算机:
+    - 体系结构: cs/computer_architecture/index.md
   - 网安:
     - subpages: computer_science.md
   - 电子:
