@@ -13,6 +13,7 @@ nav:
     - 乱七八糟发笔记: natural_science/ns_4.md
   - 计算机:
     - 体系结构: cs/computer_architecture/index.md
+    - 编程语言原理: cs/ppl/index.md
   - 网安:
     - subpages: computer_science.md
   - 电子:
