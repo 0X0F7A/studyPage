@@ -14,6 +14,7 @@ nav:
   - 计算机:
     - 体系结构: cs/computer_architecture/index.md
     - 编程语言原理: cs/ppl/index.md
+    - 计算原理: cs/poc/index.md
   - 网安:
     - subpages: computer_science.md
   - 电子:

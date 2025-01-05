@@ -1,25 +1,40 @@
-# $\lambda$ 运算
-## BNF描述$\lambda$语言
+<!-- <style>
+.md-typeset ul li {
+    margin-bottom: 0px !important;
+}
+.md-typeset {
+    line-height: 1 !important;
+}
+.md-typeset p {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+    line-height: 1 !important;
+}
+
+</style> -->
+
+## $\lambda$ 运算
+### BNF描述$\lambda$语言
 
 $\begin{aligned}exp&:=name|func|ap\newline func&:=\lambda name. exp\newline ap&:= exp\ exp\end{aligned}$
 
 $\lambda$干到头，ap只吃一个
 
-## Free Variable
+### Free Variable
 
 $\begin{aligned}&\rightarrow name\in FV(name)\newline name1 \neq name,name\in FV(exp)&\rightarrow name\in FV(\lambda\ name1.exp)  \newline name\in FV(E_1)\cup FV(E_2)&\rightarrow name\in FV(E_1\ E_2)\end{aligned}$
 
-## Bound Variable
+### Bound Variable
 
 $\begin{aligned}name\in BV(exp)&\rightarrow name\in BV(\lambda\ name1.exp)\newline name1 = name&\rightarrow name\in BV(\lambda\ name1.exp)\newline name\in BV(E_1)\cup BV(E_2)&\rightarrow name\in BV(E_1\ E_2)\end{aligned}$
 
-## Closed 封闭
+### Closed 封闭
 
 $FV(t)=\emptyset$
 
 $FV(T)\cap BV(t')=\emptyset$ t 相对 t'封闭（t可以直接扔t'里不出问题）
 
-## $\lambda$ 等价
+### $\lambda$ 等价
 
 * 形式等价（一毛一样）
 
@@ -34,19 +49,19 @@ $FV(T)\cap BV(t')=\emptyset$ t 相对 t'封闭（t可以直接扔t'里不出问�
 * $x\neq y,[b/x]y=y$
 * $[b/x]o(a_1, a_2, ...)=o([b/x]a_1, [b/x]a_2, ...)$
 
-## function composition
+### function composition
 
 $f\circ g = \lambda\ x.f\ (g\ x)$
 
-## Boolean
+### Boolean
 
 $true=\lambda\ x,y.\ x;false=\lambda\ x,y.\ y$
 
-## Church Num
+### Church Num
 
 $\overline{0}=zero=\lambda\ s,z.\ z;succ=\lambda\ n,s,z.\ s(n\ s\ z)$
 
-# (A)bstrct (S)yntax (T)ree & (A)bstrct (B)ounding (T)ree
+## (A)bstrct (S)yntax (T)ree & (A)bstrct (B)ounding (T)ree
 
 (s)ort类型$S=\set{s,...}$
 
@@ -62,7 +77,7 @@ $G=(V, \Sigma, P, S)$ V 非终结符，$\Sigma$终结符，P规则，S开始符�
 
 抽象绑定树的族 $o:(s_1,...)s; a_1\in B[X,\overrightarrow{x_1}]_{s_1}, ...;o(\overrightarrow{x_1}.a_1;...)\in B[X]_s$
 
-# E语言($\mathscr{L}\set{num,str}$)
+## E语言($\mathscr{L}\set{num,str}$)
 
 $\begin{aligned}Type\ \tau&:=num,\ str\newline
 Exp\ e&:=x,\ num[n],\ str[s],\ plus(a;b),\ times(a;b),\ cat(a;b),\ len(s),\ let(e_1;x.e_2)\end{aligned}$
@@ -87,7 +102,7 @@ extern 动态
 
 extern 上下文动态语义
 
-## 函数类型扩展(First Order)($\mathscr{L}\set{num,str,fun}$)
+### 函数类型扩展(First Order)($\mathscr{L}\set{num,str,fun}$)
 
 ![alt text](image.png)
 
@@ -97,7 +112,7 @@ extern 上下文动态语义
 
 ![alt text](image-3.png)
 
-## 函数类型扩展(High Order)($\mathscr{L}\set{num,str,\rightarrow}$)
+### 函数类型扩展(High Order)($\mathscr{L}\set{num,str,\rightarrow}$)
 
 ![alt text](image-4.png)
 
@@ -105,7 +120,7 @@ extern 上下文动态语义
 
 ![alt text](image-6.png)
 
-## Godel's T($\mathscr{L}\set{nat,\rightarrow}$)
+### Godel's T($\mathscr{L}\set{nat,\rightarrow}$)
 
 ![alt text](image-7.png)
 
@@ -119,7 +134,7 @@ extern 上下文动态语义
 
 ![alt text](image-12.png)
 
-# 递归
+## 递归
 
 total 每个输入都有输出
 
@@ -139,9 +154,7 @@ $iter\ \bar{n}\ f\ c = f\ f\ f\ ...\ c$
 
 外延性原理：对于所有输入都相同的两个函数等价
 
-一般递归
-
-# 有限类型
+## 有限类型
 
 函数类型 $var:=\cfrac{x:\tau\in\Gamma}{\Gamma\vdash x:\tau}\ ap:=\cfrac{\Gamma\vdash e_1:\tau_2\rightarrow\tau_1\ \Gamma\vdash e_2:\tau_2}{\Gamma\vdash e_1\ e_2:\tau_1},\ lam:=\cfrac{\Gamma, x_1:\tau_1\vdash  e_2:\tau_2}{\Gamma\vdash \lambda x_1.e_2:\tau_1\rightarrow\tau_2}$
 
@@ -161,17 +174,17 @@ extern 和类型
 
 ![alt text](image-13.png)
 
-## 原始互递归
+### 原始互递归
 
 $rec\set{e_0;\lambda x.y.e_1}(n) = \lambda(n:nat)iter\ n\set{\lang z,e_0\rang;\lambda x.\lang s(x.l), \lambda x.y.e_1\ x.l\ x.r\rang}$
 
 extern \_\_name\_\_
 
-# PCF
+## PCF
 
-## 等式证明系统
+### 等式证明系统
 
-$$M=M;\newline
+$M=M;\newline
 [0+0=0,0+1=1,...]\newline
 [Eq?\ n\ n=true,Eq?\ n\ m=false]\newline
 [if\ true\ then\ M\ else\ N=M, if\ false\ then\ M\ else\ N=N]\newline
@@ -189,39 +202,33 @@ M=N, P=Q, R=S\rightarrow if\ M\ then\ P\ else\ R=if\ N\ then\ Q\ else\ S\newline
 M=N\rightarrow Proj_i M=Proj_i N\newline
 M=N, P=Q\rightarrow\lang M, P\rang=\lang N, Q\rang\newline
 M=N\rightarrow\lambda x:\sigma.M=\lambda x:\sigma.N\newline
-M=N, P=Q\rightarrow M\ P=N\ Q$$
+M=N, P=Q\rightarrow M\ P=N\ Q$
 
 其中[]为规约公理
 
-## 左规约
+### 左规约
 
 在一般规约的基础上，所有多元操作符按照从左到右顺序，规约第一个非范式。
 
-## 懒规约
+### 懒规约
 
 在一般规约的基础上，加法、Eq左规约直到左侧为nat，if和函数应用优先规约判据和函数
 
-## 积极规约
+### 积极规约
 
 ![alt text](image-39.png)
 
 ![alt text](image-40.png)
 
-## BNF 描述
+### BNF 描述
 
 ![alt text](image-20.png)
 
 ![alt text](image-26.png)
 
-## 公理语义
-
-![alt text](image-21.png)
-
-![alt text](image-23.png)
+### 公理语义
 
 ![alt text](image-24.png)
-
-![alt text](image-25.png)
 
 $fix_\sigma=\lambda f:\sigma\rightarrow\sigma.f(fix_\sigma f)$
 
@@ -231,11 +238,11 @@ $\eta$等值：$\lambda x:\sigma.Mx=M$，x在M中非自由
 
 ![alt text](image-27.png)
 
-## 操作语义
+### 操作语义
 
 ![alt text](image-22.png)
 
-## 惯用语法
+### 惯用语法
 
 $let\ x:\sigma=M\ in\ N\rightarrow(\lambda x:\sigma.N)M$
 
@@ -243,7 +250,7 @@ $fix_\sigma:(\sigma\rightarrow\sigma)\rightarrow\sigma$
 
 $letrec\ f:\sigma=M\ in\ N\rightarrow let\ f:\sigma=fix_\sigma(\lambda f:\sigma.M)\ in\ N$
 
-## Misc
+### Misc
 
 $Proj_l(e)=e.l,Proj_r(e)=e.r$
 
@@ -257,39 +264,33 @@ $Currr = \lambda f:(nat\times nat)\rightarrow nat.\lambda x:nat.\lambda y:nat.f\
 
 动态作用域，静态作用域（？按须解释可以被覆盖）
 
-## 程序上下文
+### 程序上下文
 
 例：$C[] = \lambda x:nat.x+[]$
 
 操作等价，对任意的$C[],eval(C[M])\approx eval(C[N])$
 
-## 规约
+### 规约
 
 等价可以乱等，但规约具有方向性$\rightarrow$单步规约$\twoheadrightarrow$多步规约
 
-最左规约
-
-急切规约（按值解释（最内优先））
-
-懒规约（左规约（谁在左边做谁）/按名解释（直接扔进去再说））
-
-## 一般递归
+### 一般递归
 
 伴随泛函$F(f)=n\rightarrow \begin{cases}1&n=0\newline \lang n, f(n')\rang &n=n'+1\end{cases}$
 
-# Plotkin's PCF($\mathscr{L}\set{nat,\rightharpoonup}$)
+## Plotkin's PCF($\mathscr{L}\set{nat,\rightharpoonup}$)
 
-## 类型
+### 类型
 
 ![alt text](image-14.png)
 
-## 静态
+### 静态
 
 ![alt text](image-15.png)
 
 ![alt text](image-16.png)
 
-## 动态
+### 动态
 
 ![alt text](image-17.png)
 
@@ -297,15 +298,15 @@ $Currr = \lambda f:(nat\times nat)\rightarrow nat.\lambda x:nat.\lambda y:nat.f\
 
 ![alt text](image-19.png)
 
-# 无限类型
+## 无限类型
 
-## 泛型
+### 泛型
 
 $\cfrac{t.\tau\ poly\ \Gamma,x:\rho\vdash e':\rho'\ \Gamma\vdash e:[\rho/t]\tau}{\Gamma\vdash map\set{t.\tau}(x.e')(e):[\rho'/t]\tau}$
 
 正类型算子，t只出现在值域中
 
-## 归纳类型
+### 归纳类型
 
 $nil\ list, \cfrac{a\ val\ \sigma\ list}{cons(a,\sigma)\ list}$
 
@@ -315,7 +316,7 @@ $\mu X/F(X):=\cap\set{X|F(X)\subseteq X}$由F归纳定义
 
 如果X是F封闭的，那么$\mu X/F(X)\subseteq X$
 
-## 余归纳类型
+### 余归纳类型
 
 $\cfrac{a\ val\ \sigma\ list}{cons(a,\sigma)\ list}$
 
@@ -325,21 +326,21 @@ $\nu X/F(X):=\cup\set{X|X\subseteq F(X)}$由F余归纳定义
 
 如果X是F致密的，那么$X\subseteq \nu X/F(X)$
 
-## 互模拟
+### 互模拟
 
 $head(\sigma)=head(\tau)\And tail(\sigma), tail(\tau)$互模拟
 
-## fold(递归类型的例子)
+### fold(递归类型的例子)
 
 $z:=fold(l.\lang\rang),s(e):=fold(r.e)$
 
-$iter\ n\set{e_0;\lambda x.e_1} = rec_{nat}(x'.(case\ x'\set{l._\hookrightarrow e_0|r.e\hookrightarrow x.e_1\ e});n)$
+$iter\ n\set{e_0;\lambda x.e_1} = rec_{nat}(x'.(case\ x'\set{l.\\_\hookrightarrow e_0|r.e\hookrightarrow x.e_1\ e});n)$
 
 ![alt text](image-28.png)
 
 ![alt text](image-30.png)
 
-## stream(余递归类型的例子)
+### stream(余递归类型的例子)
 
 直观的理解，$x$是初始值，每一步，初始值会被$e_2$进行修改，而产生的值为修改前的$x$通过$e_1$所产生的数值，如此无限往复产生的无限表
 
@@ -353,7 +354,7 @@ $iter\ n\set{e_0;\lambda x.e_1} = rec_{nat}(x'.(case\ x'\set{l._\hookrightarrow 
 
 ![alt text](image-38.png)
 
-## 语义
+### 语义
 
 ![alt text](image-33.png)
 
@@ -361,7 +362,7 @@ $iter\ n\set{e_0;\lambda x.e_1} = rec_{nat}(x'.(case\ x'\set{l._\hookrightarrow 
 
 ![alt text](image-35.png)
 
-# 并行
+## 并行
 
 * 粒度：两次通信之间每个处理器计算工作量的大小
 * 并行度：某一时刻多个处理器上可以同时执行的子任务个数
