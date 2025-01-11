@@ -1,0 +1,1515 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../misc/file_logging/">
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.49">
+    
+    
+      
+        <title>脚本 - CatPig's study archive</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.6f8fc17f.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#bilibili" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="CatPig&#39;s study archive" class="md-header__button md-logo" aria-label="CatPig's study archive" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            CatPig's study archive
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              脚本
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/0X0F7A/studyPage/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    0X0F7A/studyPage/
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href=".." class="md-tabs__link">
+          
+  
+  主页
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../natural_science/" class="md-tabs__link">
+          
+  
+  自然科学
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../cs/computer_architecture/" class="md-tabs__link">
+          
+  
+  计算机
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../computer_science/" class="md-tabs__link">
+          
+  
+  网安
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../double_e/" class="md-tabs__link">
+          
+  
+  电子
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../misc/file_logging/" class="md-tabs__link">
+          
+  
+  杂项
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="CatPig&#39;s study archive" class="md-nav__button md-logo" aria-label="CatPig's study archive" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    CatPig's study archive
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/0X0F7A/studyPage/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    0X0F7A/studyPage/
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    主页
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            主页
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Welcome
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../about/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    自然科学
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            自然科学
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../natural_science/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    subpages
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../natural_science/ns_0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    相对论质量的推导
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../natural_science/ns_1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    某常系数非齐次线性递归关系的证明中的一个引理证明
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../natural_science/ns_2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    逻辑代数对偶性的证明
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../natural_science/ns_3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    一些磁共振原理的笔记
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../natural_science/ns_4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    乱七八糟发笔记
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    计算机
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            计算机
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cs/computer_architecture/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    体系结构
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cs/ppl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    编程语言原理
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cs/poc/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    计算原理
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cs/network/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    计算机网络
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    网安
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            网安
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../computer_science/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    subpages
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    电子
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            电子
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../double_e/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    subpages
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    杂项
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            杂项
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../misc/file_logging/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    记录文件修改
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    脚本
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    脚本
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#bilibili" class="md-nav__link">
+    <span class="md-ellipsis">
+      更整洁的bilibili
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bilibili_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      清理bilibili搜索页广告
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bilibili_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      新版bilibili禁止无限下拉&amp;清除广告及创意广告
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      自定义的百度界面
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adblocker" class="md-nav__link">
+    <span class="md-ellipsis">
+      反反adblocker弹窗脚本
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#bilibili" class="md-nav__link">
+    <span class="md-ellipsis">
+      更整洁的bilibili
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bilibili_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      清理bilibili搜索页广告
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bilibili_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      新版bilibili禁止无限下拉&amp;清除广告及创意广告
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      自定义的百度界面
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adblocker" class="md-nav__link">
+    <span class="md-ellipsis">
+      反反adblocker弹窗脚本
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+    <a href="https://github.com/0X0F7A/studyPage/edit/main/docs/scripts.md" title="Edit this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75z"/></svg>
+    </a>
+  
+  
+
+
+  <h1>脚本</h1>
+
+<h2 id="bilibili">更整洁的bilibili</h2>
+<div class="highlight"><pre><span></span><code><span class="c">/* ==UserStyle==</span>
+<span class="c">@name           2023/5/17 09:53:09</span>
+<span class="c">@namespace      github.com/openstyles/stylus</span>
+<span class="c">@version        1.0.0</span>
+<span class="c">@description    A new userstyle</span>
+<span class="c">@author         Me</span>
+<span class="c">==/UserStyle== */</span>
+
+<span class="p">@</span><span class="k">-moz-document</span><span class="w"> </span><span class="nt">domain</span><span class="o">(</span><span class="s2">&quot;bilibili.com&quot;</span><span class="o">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="p">.</span><span class="nc">trending</span><span class="o">,</span><span class="w"> </span><span class="p">.</span><span class="nc">nav-user-center</span><span class="w"> </span><span class="p">.</span><span class="nc">t</span><span class="w"> </span><span class="p">.</span><span class="nc">num</span><span class="o">,</span><span class="w"> </span><span class="p">.</span><span class="nc">bili-header</span><span class="w"> </span><span class="p">.</span><span class="nc">red-num--message</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">display</span><span class="p">:</span><span class="kc">none</span><span class="w"> </span><span class="cp">!important</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+
+<span class="p">@</span><span class="k">-moz-document</span><span class="w"> </span><span class="nt">domain</span><span class="o">(</span><span class="s2">&quot;www.bilibili.com&quot;</span><span class="o">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="p">.</span><span class="nc">relative-container</span><span class="o">,</span><span class="w"> </span><span class="p">.</span><span class="nc">recommended-swipe-core</span><span class="o">,</span><span class="w"> </span><span class="p">.</span><span class="nc">bili-grid</span><span class="o">,</span><span class="w"> </span><span class="p">.</span><span class="nc">eva-banner</span><span class="o">,</span><span class="w"> </span><span class="p">.</span><span class="nc">vip-wrap</span><span class="o">,</span><span class="w"> </span><span class="p">.</span><span class="nc">ad-report</span><span class="p">:</span><span class="nd">not</span><span class="o">(</span><span class="p">:</span><span class="nd">empty</span><span class="o">),</span><span class="w"> </span>
+<span class="w">    </span><span class="p">.</span><span class="nc">video-card-ad-small</span><span class="o">,</span><span class="w"> </span><span class="p">.</span><span class="nc">recommended-swipe</span><span class="o">,</span><span class="w"> </span><span class="p">.</span><span class="nc">primary-btn</span><span class="p">.</span><span class="nc">go-back</span><span class="o">,</span><span class="w"> </span><span class="p">.</span><span class="nc">link-item</span><span class="p">.</span><span class="nc">link-item__right</span><span class="o">,</span><span class="w"> </span><span class="p">.</span><span class="nc">other-link</span><span class="o">,</span><span class="w"> </span>
+<span class="w">    </span><span class="p">.</span><span class="nc">footer-icons</span><span class="o">,</span><span class="w"> </span><span class="p">.</span><span class="nc">pop-live-small-mode</span><span class="o">,</span><span class="w"> </span><span class="p">.</span><span class="nc">red-num--dyn</span><span class="o">,</span><span class="w"> </span><span class="p">.</span><span class="nc">pop-live-small-mode</span><span class="o">,</span><span class="w"> </span><span class="p">#</span><span class="nn">bili-header-banner-img</span><span class="o">,</span><span class="w"> </span>
+<span class="w">    </span><span class="p">.</span><span class="nc">red-num--dynamic</span><span class="o">,</span><span class="w"> </span><span class="p">#</span><span class="nn">reco_list</span><span class="o">,</span><span class="w"> </span><span class="p">#</span><span class="nn">slide_ad</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">display</span><span class="p">:</span><span class="kc">none</span><span class="w"> </span><span class="cp">!important</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="p">.</span><span class="nc">bili-grid</span><span class="p">.</span><span class="nc">short-margin</span><span class="p">.</span><span class="nc">grid-anchor</span><span class="p">{</span>
+<span class="w">        </span><span class="k">display</span><span class="p">:</span><span class="kc">flex</span><span class="w"> </span><span class="cp">!important</span><span class="p">;</span>
+<span class="w">        </span><span class="k">width</span><span class="p">:</span><span class="w"> </span><span class="mi">80</span><span class="kt">%</span><span class="p">;</span>
+<span class="w">        </span><span class="k">left</span><span class="p">:</span><span class="w"> </span><span class="mi">150</span><span class="kt">px</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="p">.</span><span class="nc">recommend-container__2-line</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="p">:</span><span class="nd">nth-of-type</span><span class="o">(</span><span class="nt">n</span><span class="o">+</span><span class="nt">10</span><span class="o">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">display</span><span class="p">:</span><span class="kc">flex</span><span class="w"> </span><span class="cp">!important</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="nt">input</span><span class="p">::</span><span class="nd">-webkit-input-placeholder</span><span class="o">,</span><span class="w"> </span><span class="nt">input</span><span class="p">::</span><span class="nd">-moz-placeholder</span><span class="o">,</span><span class="w"> </span><span class="nt">input</span><span class="p">:</span><span class="nd">-moz-placeholder</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="kc">transparent</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="p">.</span><span class="nc">bili-dm-vip</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">background</span><span class="p">:</span><span class="w"> </span><span class="kc">none</span><span class="w"> </span><span class="cp">!important</span><span class="p">;</span>
+<span class="w">        </span><span class="k">text-shadow</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="kt">px</span><span class="w"> </span><span class="mi">1</span><span class="kt">px</span><span class="w"> </span><span class="mi">2</span><span class="kt">px</span><span class="w"> </span><span class="mh">#000000</span><span class="p">,</span><span class="mi">0</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="mi">1</span><span class="kt">px</span><span class="w"> </span><span class="mh">#000000</span><span class="w"> </span><span class="cp">!important</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="p">.</span><span class="nc">left-entry</span><span class="w"> </span><span class="nt">li</span><span class="o">,</span><span class="w"> </span><span class="p">.</span><span class="nc">mini-header__arrow</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">visibility</span><span class="p">:</span><span class="kc">hidden</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="nt">a</span><span class="p">.</span><span class="nc">entry-title</span><span class="o">,</span><span class="w"> </span><span class="nt">a</span><span class="p">.</span><span class="nc">left-entry__title</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">visibility</span><span class="p">:</span><span class="kc">visible</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="c">/* for fucking newer version*/</span>
+<span class="w">    </span><span class="p">.</span><span class="nc">floor-single-card</span><span class="o">,</span><span class="w"> </span><span class="p">.</span><span class="nc">bili-live-card</span><span class="o">,</span><span class="w"> </span><span class="p">.</span><span class="nc">desktop-download-tip</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="kc">none</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="p">.</span><span class="nc">recommended-container_floor-aside</span><span class="w"> </span><span class="p">.</span><span class="nc">container</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="p">:</span><span class="nd">nth-of-type</span><span class="o">(</span><span class="nt">n</span><span class="o">+</span><span class="nt">8</span><span class="o">)</span><span class="w"> </span><span class="p">{</span><span class="w">  </span><span class="c">/* this fix the gap of the large banner */</span>
+<span class="w">        </span><span class="k">margin-top</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="kt">px</span><span class="w"> </span><span class="cp">!important</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="p">.</span><span class="nc">feed-card</span><span class="w"> </span><span class="p">.</span><span class="nc">bili-video-card</span><span class="p">.</span><span class="nc">is-rcmd</span><span class="w"> </span><span class="p">{</span><span class="w">  </span><span class="c">/* this part fix the ever scrolling */</span>
+<span class="w">        </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="kc">block</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="p">.</span><span class="nc">bili-video-card</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">display</span><span class="p">:</span><span class="kc">none</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="c">/* till here */</span>
+<span class="p">}</span>
+
+<span class="p">@</span><span class="k">-moz-document</span><span class="w"> </span><span class="nt">domain</span><span class="o">(</span><span class="s2">&quot;t.bilibili.com&quot;</span><span class="o">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="p">.</span><span class="nc">bili-dyn-version-control__btn</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="kc">none</span><span class="w"> </span><span class="cp">!important</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="p">.</span><span class="nc">trending</span><span class="o">,</span><span class="w"> </span><span class="p">.</span><span class="nc">adaptive-scroll</span><span class="o">,</span><span class="w"> </span><span class="p">.</span><span class="nc">nav-user-center</span><span class="w"> </span><span class="p">.</span><span class="nc">t</span><span class="w"> </span><span class="p">.</span><span class="nc">num</span><span class="o">,</span><span class="w"> </span><span class="p">.</span><span class="nc">topic-panel</span><span class="o">,</span><span class="w"> </span><span class="p">.</span><span class="nc">bili-dyn-publishing</span><span class="o">,</span><span class="w"> </span>
+<span class="w">    </span><span class="p">.</span><span class="nc">bili-dyn-publishing</span><span class="w"> </span><span class="p">.</span><span class="nc">topic-panel</span><span class="o">,</span><span class="w"> </span><span class="p">.</span><span class="nc">bili-dyn-ads</span><span class="o">,</span><span class="w"> </span><span class="p">.</span><span class="nc">bili-dyn-version-control__reminding</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">display</span><span class="p">:</span><span class="kc">none</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="p">.</span><span class="nc">nav-search-keyword</span><span class="p">::</span><span class="nd">-moz-placeholder</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">color</span><span class="p">:</span><span class="mh">#1f2121</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+
+<span class="p">@</span><span class="k">-moz-document</span><span class="w"> </span><span class="nt">domain</span><span class="o">(</span><span class="s2">&quot;space.bilibili.com&quot;</span><span class="o">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="p">.</span><span class="nc">blankforscctest</span><span class="o">,</span><span class="w"> </span><span class="p">.</span><span class="nc">trending</span><span class="o">,</span><span class="w"> </span><span class="p">.</span><span class="nc">trending-item</span><span class="o">,</span><span class="w"> </span><span class="p">.</span><span class="nc">bilibili-player-score</span><span class="o">,</span><span class="w"> </span><span class="p">.</span><span class="nc">nav-search-keyword</span><span class="p">::</span><span class="nd">-moz-placeholder</span><span class="o">,</span>
+<span class="w">    </span><span class="p">.</span><span class="nc">dyn-topic-panel</span><span class="o">,</span><span class="w"> </span><span class="p">.</span><span class="nc">nav-user-center</span><span class="w"> </span><span class="p">.</span><span class="nc">t</span><span class="w"> </span><span class="p">.</span><span class="nc">num</span><span class="o">,</span><span class="w"> </span><span class="p">.</span><span class="nc">bili-header</span><span class="w"> </span><span class="p">.</span><span class="nc">red-num--message</span><span class="o">,</span><span class="w"> </span>
+<span class="w">    </span><span class="p">.</span><span class="nc">mini-header</span><span class="w"> </span><span class="p">.</span><span class="nc">left-entry</span><span class="w"> </span><span class="p">.</span><span class="nc">v-popover-wrap</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="kc">none</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="p">.</span><span class="nc">nav-search-input</span><span class="p">::</span><span class="nd">placeholder</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">color</span><span class="p">:</span><span class="mh">#1f2121</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<h2 id="bilibili_1">清理bilibili搜索页广告</h2>
+<div class="highlight"><pre><span></span><code><span class="c1">// ==UserScript==</span>
+<span class="c1">// @name         Block AD</span>
+<span class="c1">// @namespace    http://tampermonkey.net/</span>
+<span class="c1">// @version      0.1</span>
+<span class="c1">// @description  try to take over the world!</span>
+<span class="c1">// @author       You</span>
+<span class="c1">// @include      *.bilibili.*</span>
+<span class="c1">// @icon         https://www.google.com/s2/favicons?sz=64&amp;domain=bilibili.com</span>
+<span class="c1">// @grant        none</span>
+<span class="c1">// ==/UserScript==</span>
+
+<span class="p">(</span><span class="kd">function</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nb">window</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;transitionend&#39;</span><span class="p">,</span><span class="kd">function</span><span class="p">(){</span>
+<span class="w">        </span><span class="kd">var</span><span class="w"> </span><span class="nx">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelectorAll</span><span class="p">(</span><span class="s2">&quot;.bili-video-card__info--ad&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="k">for</span><span class="p">(</span><span class="kd">var</span><span class="w"> </span><span class="nx">i</span><span class="o">=</span><span class="mf">0</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">&lt;</span><span class="nx">a</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="nx">a</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">parentElement</span><span class="p">.</span><span class="nx">parentElement</span><span class="p">.</span><span class="nx">parentElement</span><span class="p">.</span><span class="nx">parentElement</span><span class="p">.</span><span class="nx">parentElement</span><span class="p">.</span><span class="nx">parentElement</span><span class="p">.</span><span class="nx">parentElement</span><span class="p">.</span><span class="nx">remove</span><span class="p">()};</span>
+<span class="w">    </span><span class="p">},</span><span class="kc">false</span><span class="p">);</span>
+<span class="p">})();</span>
+</code></pre></div>
+<h2 id="bilibili_2">新版bilibili禁止无限下拉&amp;清除广告及创意广告</h2>
+<div class="highlight"><pre><span></span><code><span class="c1">// ==UserScript==</span>
+<span class="c1">// @name         Block AD</span>
+<span class="c1">// @namespace    http://tampermonkey.net/</span>
+<span class="c1">// @version      0.1</span>
+<span class="c1">// @description  try to take over the world!</span>
+<span class="c1">// @author       You</span>
+<span class="c1">// @match        www.bilibili.com</span>
+<span class="c1">// @icon         https://www.google.com/s2/favicons?sz=64&amp;domain=bilibili.com</span>
+<span class="c1">// @grant        none</span>
+<span class="c1">// ==/UserScript==</span>
+
+<span class="p">(</span><span class="kd">function</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nb">window</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;transitionend&#39;</span><span class="p">,</span><span class="kd">function</span><span class="p">(){</span>
+<span class="w">        </span><span class="kd">var</span><span class="w"> </span><span class="nx">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelectorAll</span><span class="p">(</span><span class="s2">&quot;.bili-video-card__info--ad&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="k">for</span><span class="p">(</span><span class="kd">var</span><span class="w"> </span><span class="nx">i</span><span class="o">=</span><span class="mf">0</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">&lt;</span><span class="nx">a</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="nx">a</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">parentElement</span><span class="p">.</span><span class="nx">parentElement</span><span class="p">.</span><span class="nx">parentElement</span><span class="p">.</span><span class="nx">parentElement</span><span class="p">.</span><span class="nx">parentElement</span><span class="p">.</span><span class="nx">parentElement</span><span class="p">.</span><span class="nx">remove</span><span class="p">()};</span>
+<span class="w">        </span><span class="nx">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelectorAll</span><span class="p">(</span><span class="s2">&quot;.bili-video-card__info--creative-ad&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="k">for</span><span class="p">(</span><span class="nx">i</span><span class="o">=</span><span class="mf">0</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">&lt;</span><span class="nx">a</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="nx">a</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">parentElement</span><span class="p">.</span><span class="nx">parentElement</span><span class="p">.</span><span class="nx">parentElement</span><span class="p">.</span><span class="nx">parentElement</span><span class="p">.</span><span class="nx">parentElement</span><span class="p">.</span><span class="nx">parentElement</span><span class="p">.</span><span class="nx">remove</span><span class="p">()};</span>
+<span class="w">        </span><span class="cm">/* a = document.querySelector(&quot;.container.is-version8&quot;).childNodes;</span>
+<span class="cm">        for(i=0; i&lt;a.length; i++) {</span>
+<span class="cm">            if(a[i].nodeType == 1) {</span>
+<span class="cm">                if(a[i].attributes.class.nodeValue == &quot;feed-card&quot;);</span>
+<span class="cm">                else {</span>
+<span class="cm">                    a[i].remove();</span>
+<span class="cm">                }</span>
+<span class="cm">            }</span>
+<span class="cm">        } */</span>
+<span class="w">    </span><span class="p">},</span><span class="kc">false</span><span class="p">);</span>
+<span class="p">})();</span>
+</code></pre></div>
+<h2 id="_1">自定义的百度界面</h2>
+<div class="highlight"><pre><span></span><code><span class="c">/* ==UserStyle==</span>
+<span class="c">@name           2023/2/17 17:07:33</span>
+<span class="c">@namespace      github.com/openstyles/stylus</span>
+<span class="c">@version        1.0.0</span>
+<span class="c">@description    A new userstyle</span>
+<span class="c">@author         Me</span>
+<span class="c">==/UserStyle== */</span>
+
+
+<span class="p">@</span><span class="k">-moz-document</span><span class="w"> </span><span class="nt">domain</span><span class="o">(</span><span class="s2">&quot;baidu.com&quot;</span><span class="o">),</span><span class="w"> </span><span class="nt">domain</span><span class="o">(</span><span class="s2">&quot;baidu.com/s&quot;</span><span class="o">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="p">.</span><span class="nc">s_btn</span><span class="o">,</span><span class="w"> </span><span class="p">.</span><span class="nc">s_btn</span><span class="p">:</span><span class="nd">hover</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">background-color</span><span class="p">:</span><span class="w"> </span><span class="mh">#42c3d4</span><span class="w"> </span><span class="cp">!important</span><span class="p">;</span>
+<span class="w">        </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="mh">#161d4b</span><span class="w"> </span><span class="cp">!important</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="p">#</span><span class="nn">s_lg_img</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">filter</span><span class="p">:</span><span class="w"> </span><span class="nb">invert</span><span class="p">(</span><span class="mi">100</span><span class="kt">%</span><span class="p">)</span><span class="w"> </span><span class="nb">grayscale</span><span class="p">(</span><span class="mi">100</span><span class="kt">%</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="p">#</span><span class="nn">head_wrapper</span><span class="w"> </span><span class="p">#</span><span class="nn">kw</span><span class="p">:</span><span class="nd">focus</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">border-color</span><span class="p">:</span><span class="w"> </span><span class="mh">#42c3d4</span><span class="w"> </span><span class="cp">!important</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="p">#</span><span class="nn">head_wrapper</span><span class="w"> </span><span class="p">.</span><span class="nc">soutu-btn</span><span class="p">:</span><span class="nd">hover</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">filter</span><span class="p">:</span><span class="w"> </span><span class="nb">hue-rotate</span><span class="p">(</span><span class="mi">-50</span><span class="kt">deg</span><span class="p">)</span><span class="w"> </span><span class="nb">brightness</span><span class="p">(</span><span class="mi">160</span><span class="kt">%</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="p">#</span><span class="nn">result_logo</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">filter</span><span class="p">:</span><span class="w"> </span><span class="nb">invert</span><span class="p">(</span><span class="mi">100</span><span class="kt">%</span><span class="p">)</span><span class="w"> </span><span class="nb">grayscale</span><span class="p">(</span><span class="mi">100</span><span class="kt">%</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="p">::</span><span class="nd">after</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">background-color</span><span class="p">:</span><span class="w"> </span><span class="mh">#42c3d4</span><span class="w"> </span><span class="cp">!important</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="p">.</span><span class="nc">wrapper_new</span><span class="w"> </span><span class="p">#</span><span class="nn">form</span><span class="w"> </span><span class="p">.</span><span class="nc">bdsug-new</span><span class="o">,</span><span class="w"> </span><span class="p">.</span><span class="nc">wrapper_new</span><span class="w"> </span><span class="p">.</span><span class="nc">iptfocus</span><span class="p">.</span><span class="nc">s_ipt_wr</span><span class="o">,</span><span class="w"> </span><span class="p">.</span><span class="nc">wrapper_new</span><span class="w"> </span><span class="p">.</span><span class="nc">s_ipt_wr</span><span class="p">.</span><span class="nc">new-ipt-focus</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">border-color</span><span class="p">:</span><span class="w"> </span><span class="mh">#42c3d4</span><span class="w"> </span><span class="cp">!important</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="p">#</span><span class="nn">content_left</span><span class="w"> </span><span class="nt">a</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="mh">#9fe5f5</span><span class="w"> </span><span class="cp">!important</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="p">#</span><span class="nn">content_left</span><span class="w"> </span><span class="nt">a</span><span class="p">:</span><span class="nd">visited</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="mh">#b78edd</span><span class="w"> </span><span class="cp">!important</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="p">#</span><span class="nn">content_left</span><span class="w"> </span><span class="nt">a</span><span class="p">:</span><span class="nd">hover</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="mh">#d0f3fb</span><span class="w"> </span><span class="cp">!important</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="p">#</span><span class="nn">content_left</span><span class="w"> </span><span class="nt">a</span><span class="p">:</span><span class="nd">hover</span><span class="p">:</span><span class="nd">visited</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="mh">#dab9f9</span><span class="w"> </span><span class="cp">!important</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="p">#</span><span class="nn">content_left</span><span class="w"> </span><span class="nt">a</span><span class="p">:</span><span class="nd">hover</span><span class="p">:</span><span class="nd">visited</span><span class="w"> </span><span class="nt">em</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="mh">#ff9595</span><span class="w"> </span><span class="cp">!important</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="p">.</span><span class="nc">hint_right_middle</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">border-bottom-color</span><span class="p">:</span><span class="w"> </span><span class="mh">#070809</span><span class="w"> </span><span class="cp">!important</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="p">#</span><span class="nn">content_right</span><span class="w"> </span><span class="p">.</span><span class="nc">new-pmd</span><span class="w"> </span><span class="p">.</span><span class="nc">c-img-border</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">border-color</span><span class="p">:</span><span class="w"> </span><span class="mh">#070809</span><span class="w"> </span><span class="cp">!important</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="p">#</span><span class="nn">content_right</span><span class="w"> </span><span class="p">.</span><span class="nc">opr-recommends-img-border-span</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">border-color</span><span class="p">:</span><span class="w"> </span><span class="mh">#070809</span><span class="w"> </span><span class="cp">!important</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="p">.</span><span class="nc">s-top-left</span><span class="o">,</span><span class="p">.</span><span class="nc">s-top-right</span><span class="o">,</span><span class="w"> </span><span class="p">#</span><span class="nn">bottom_layer</span><span class="o">,</span><span class="w"> </span><span class="p">#</span><span class="nn">s_lm_wrap</span><span class="o">,</span><span class="w"> </span><span class="p">.</span><span class="nc">FYB_RD</span><span class="o">,</span><span class="w"> </span><span class="p">#</span><span class="nn">s_wrap</span><span class="o">,</span><span class="w"> </span><span class="p">.</span><span class="nc">s-hotsearch-wrapper</span><span class="o">,</span><span class="w"> </span><span class="p">#</span><span class="nn">s_side_wrapper</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="kc">none</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="p">#</span><span class="nn">head_wrapper</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">height</span><span class="p">:</span><span class="w"> </span><span class="mi">60</span><span class="kt">%</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="p">#</span><span class="nn">head_wrapper</span><span class="p">.</span><span class="nc">s-ps-islite</span><span class="w"> </span><span class="p">.</span><span class="nc">s-p-top</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">bottom</span><span class="p">:</span><span class="w"> </span><span class="mi">60</span><span class="kt">px</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="p">#</span><span class="nn">head_wrapper</span><span class="w"> </span><span class="p">.</span><span class="nc">s-p-top</span><span class="p">{</span>
+<span class="w">        </span><span class="k">top</span><span class="p">:</span><span class="mi">220</span><span class="kt">px</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="p">.</span><span class="nc">c-result-content</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">filter</span><span class="p">:</span><span class="w"> </span><span class="nb">contrast</span><span class="p">(</span><span class="mi">0</span><span class="kt">%</span><span class="p">)</span><span class="w"> </span><span class="nb">brightness</span><span class="p">(</span><span class="mi">6</span><span class="kt">%</span><span class="p">);</span>
+<span class="w">        </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="mh">#070809</span><span class="w"> </span><span class="cp">!important</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="p">.</span><span class="nc">container_l</span><span class="p">.</span><span class="nc">sam_newgrid</span><span class="w"> </span><span class="p">#</span><span class="nn">content_right</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">width</span><span class="p">:</span><span class="mi">1</span><span class="kt">px</span><span class="p">;</span>
+<span class="w">        </span><span class="k">height</span><span class="p">:</span><span class="mi">1</span><span class="kt">px</span><span class="p">;</span>
+<span class="w">        </span><span class="k">left</span><span class="p">:</span><span class="w"> </span><span class="mi">10000</span><span class="kt">px</span><span class="p">;</span>
+<span class="w">        </span><span class="k">position</span><span class="p">:</span><span class="w"> </span><span class="kc">relative</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="p">#</span><span class="nn">container</span><span class="p">.</span><span class="nc">sam_newgrid</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">width</span><span class="p">:</span><span class="mi">1</span><span class="kt">px</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="p">.</span><span class="nc">a</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="mh">#070809</span><span class="w"> </span><span class="cp">!important</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="p">#</span><span class="nn">content_right</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">filter</span><span class="p">:</span><span class="w"> </span><span class="nb">contrast</span><span class="p">(</span><span class="mi">0</span><span class="kt">%</span><span class="p">)</span><span class="w"> </span><span class="nb">brightness</span><span class="p">(</span><span class="mi">6</span><span class="kt">%</span><span class="p">);</span>
+<span class="w">        </span><span class="k">visibility</span><span class="p">:</span><span class="w"> </span><span class="kc">hidden</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<h2 id="adblocker">反反adblocker弹窗脚本</h2>
+<p>修改自 <a href="https://github.com/TheRealJoelmatic/RemoveAdblockThing">https://github.com/TheRealJoelmatic/RemoveAdblockThing</a></p>
+<div class="highlight"><pre><span></span><code><span class="c1">// ==UserScript==</span>
+<span class="c1">// @name         Remove Adblock Thing(edited)</span>
+<span class="c1">// @namespace    http://tampermonkey.net/</span>
+<span class="c1">// @version      5.6</span>
+<span class="c1">// @description  Removes Adblock Thing</span>
+<span class="c1">// @author       JoelMatic</span>
+<span class="c1">// @match        https://www.youtube.com/*</span>
+<span class="c1">// @icon         https://www.google.com/s2/favicons?sz=64&amp;domain=youtube.com</span>
+<span class="c1">// @downloadURL  https://github.com/TheRealJoelmatic/RemoveAdblockThing/raw/main/Youtube-Ad-blocker-Reminder-Remover.user.js</span>
+<span class="c1">// @grant        none</span>
+<span class="c1">// ==/UserScript==</span>
+
+<span class="p">(</span><span class="kd">function</span><span class="p">()</span>
+<span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="c1">// Enable The Popup remover (pointless if you have the Undetected Adblocker)</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">removePopup</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span><span class="p">;</span>
+<span class="w">    </span><span class="c1">// Enable debug messages into the console</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">debugMessages</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span><span class="p">;</span>
+
+<span class="w">    </span><span class="c1">// Set everything up here</span>
+<span class="w">    </span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Script started&quot;</span><span class="p">);</span>
+
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">removePopup</span><span class="p">)</span><span class="w"> </span><span class="nx">popupRemover</span><span class="p">();</span>
+
+<span class="w">    </span><span class="c1">// Remove Them pesski popups</span>
+<span class="w">    </span><span class="kd">function</span><span class="w"> </span><span class="nx">popupRemover</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+
+<span class="w">        </span><span class="nx">setInterval</span><span class="p">(()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="c1">// how to see what to change, watch the element handler_arg_b for change in attribute, then see the stack </span>
+<span class="w">            </span><span class="kd">const</span><span class="w"> </span><span class="nx">modalOverlay</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s2">&quot;tp-yt-iron-overlay-backdrop&quot;</span><span class="p">);</span>
+<span class="w">            </span><span class="kd">const</span><span class="w"> </span><span class="nx">popup</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s2">&quot;.style-scope ytd-enforcement-message-view-model&quot;</span><span class="p">);</span>
+<span class="w">            </span><span class="kd">const</span><span class="w"> </span><span class="nx">handler_arg_b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">popup</span><span class="p">.</span><span class="nx">parentElement</span><span class="p">;</span>
+<span class="w">            </span><span class="c1">// handleClosePopupAction_</span>
+<span class="w">            </span><span class="kd">const</span><span class="w"> </span><span class="nx">popupButton</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;dismiss-button&quot;</span><span class="p">);</span>
+
+<span class="w">            </span><span class="kd">var</span><span class="w"> </span><span class="nx">video</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">&#39;video&#39;</span><span class="p">);</span>
+
+<span class="w">            </span><span class="kd">const</span><span class="w"> </span><span class="nx">bodyStyle</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">style</span><span class="p">;</span>
+<span class="w">            </span><span class="nx">bodyStyle</span><span class="p">.</span><span class="nx">setProperty</span><span class="p">(</span><span class="s1">&#39;overflow-y&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;auto&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;important&#39;</span><span class="p">);</span>
+
+<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">modalOverlay</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="nx">modalOverlay</span><span class="p">.</span><span class="nx">removeAttribute</span><span class="p">(</span><span class="s2">&quot;opened&quot;</span><span class="p">);</span>
+<span class="w">                </span><span class="c1">// modalOverlay.remove();</span>
+<span class="w">            </span><span class="p">}</span>
+
+<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">popup</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nx">popupButton</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nx">handler_arg_b</span><span class="p">.</span><span class="nx">style</span><span class="p">[</span><span class="s2">&quot;display&quot;</span><span class="p">]</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="s2">&quot;none&quot;</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Popup detected, removing...&quot;</span><span class="p">);</span>
+
+<span class="w">                </span><span class="nx">handler_arg_b</span><span class="p">.</span><span class="nx">close</span><span class="p">();</span>
+<span class="w">                </span><span class="c1">// popup.remove();</span>
+<span class="w">                </span><span class="nx">video</span><span class="p">.</span><span class="nx">play</span><span class="p">();</span>
+
+<span class="w">                </span><span class="cm">/*setTimeout(() =&gt; {</span>
+<span class="cm">                    // video.play();</span>
+<span class="cm">                }, 500);*/</span>
+
+<span class="w">                </span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Popup removed&quot;</span><span class="p">);</span>
+<span class="w">            </span><span class="p">}</span>
+<span class="w">            </span><span class="c1">// Check if the video is paused after removing the popup</span>
+<span class="w">            </span><span class="c1">// if (!video.paused) return;</span>
+<span class="w">            </span><span class="c1">// UnPause The Video</span>
+<span class="w">            </span><span class="c1">// video.play();</span>
+
+<span class="w">        </span><span class="p">},</span><span class="w"> </span><span class="mf">1000</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="p">})();</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="p">@</span><span class="k">-moz-document</span><span class="w"> </span><span class="nt">domain</span><span class="o">(</span><span class="s2">&quot;www.youtube.com&quot;</span><span class="o">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="c">/*, ytd-popup-container*/</span>
+<span class="w">    </span><span class="p">.</span><span class="nc">masthead-ad</span><span class="o">,</span><span class="w"> </span><span class="nt">ytd-ad-slot-renderer</span><span class="o">,</span><span class="w"> </span><span class="nt">ytd-reel-shelf-renderer</span><span class="o">,</span><span class="w"> </span><span class="nt">ytd-enforcement-message-view-model</span><span class="o">,</span><span class="w"> </span><span class="nt">tp-yt-iron-overlay-backdrop</span><span class="p">{</span>
+<span class="w">        </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="kc">none</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.path", "content.action.edit"], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.88dd0f4e.min.js"></script>
+      
+        <script src="../javascripts/extra.js"></script>
+      
+        <script src="../javascripts/katex.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js"></script>
+      
+    
+  </body>
+</html>

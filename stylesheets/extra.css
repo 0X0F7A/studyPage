@@ -1,0 +1,64 @@
+[data-md-color-accent=grey] {
+    --md-accent-fg-color:#757575;
+    --md-accent-fg-color--transparent:#7575751a;
+    --md-accent-bg-color:#fff;
+    --md-accent-bg-color--light:#ffffffb3;
+}
+[data-md-color-primary=grey] {
+    --md-typeset-a-color: #959595 !important;
+}
+
+[data-md-color-accent=blue-grey] {
+    --md-accent-fg-color:#546d78;
+    --md-accent-fg-color--transparent:#546d781a;
+    --md-accent-bg-color:#fff;
+    --md-accent-bg-color--light:#ffffffb3;
+}
+[data-md-color-primary=blue-grey] {
+    --md-typeset-a-color: #748d98 !important;
+}
+
+button[data-md-color-primary] {
+    background-color: var(--md-primary-fg-color);
+}
+
+button[data-md-color-primary]:hover {
+    opacity: 75%;
+}
+
+button[data-md-color-accent], button[data-md-color-primary], button[data-md-color-scheme] {
+    width: 8.4rem;
+    margin-bottom: .4rem;
+    padding: 2.4rem .4rem .4rem;
+    transition: background-color .25s,opacity .25s;
+    border-radius: .2rem;
+    color: var(--md-accent-fg-color);
+    font-size: .8rem;
+    text-align: left;
+    cursor: pointer;
+}
+
+code[data-md-color-primary] {
+    color: var(--md-primary-fg-color);
+}
+
+.md-typeset {
+    font-size: .7rem;
+    line-height: 1.6;
+}
+
+.md-typeset table:not([class]) {
+    border-radius: 5px;
+}
+
+thead {
+    color: var(--md-primary-fg-color);
+}
+
+.md-typeset h1 {
+    color: var(--md-primary-fg-color);
+}
+
+.md-typeset h2 {
+    font-family: 黑体;
+}
